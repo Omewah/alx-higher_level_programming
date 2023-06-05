@@ -1,0 +1,23 @@
+#!/bin/bash
+
+# Check if the PYFILE environment variable is set
+if [ -z "$PYFILE" ]; then
+    echo "PYFILE environment variable is not set."
+    exit 1
+fi
+
+# Set the output filename by appending "c" to the PYFILE name
+OUTPUT_FILE="${PYFILE}c"
+
+# Compile the Python script using the compileall module
+python -m compileall "$PYFILE" -b
+
+# Check if the compilation was successful
+if [ -f "$OUTPUT_FILE" ]; then
+    echo "Compilation successful. Output filename: $OUTPUT_FILE"
+    exit 0
+else
+    echo "Compilation failed."
+    exit 1
+fi
+
