@@ -3,22 +3,22 @@
 /**
  * check_cycle - a function that checks if a singly LL has a cycle in it
  * @list: singly linked list
- * Return: 0, no cycle. Else, 1
+ * Return: 0 no cycle. Else, 1 if cycle
  */
 
 int check_cycle(listint_t *list)
 {
-	listint_t *a = list;
-	listint_t *b = list;
+	listint_t *cat, *mice = list;
 
-	while (a && b)
+	while (cat && mice)
 	{
-		if (b->next == NULL)
+		if (mice->next == NULL)
 			return (0);
-		a = a->next;
-		b = b->next;
-		if (a == b)
+		cat = cat->next;
+		mice = mice->next->next;
+		if (cat == mice)
 			return (1);
 	}
+
 	return (0);
 }
