@@ -39,7 +39,7 @@ listint_t *insert_node(listint_t **head, int number)
 	while (y != NULL && a < index - 1)
 	{	y = y->next;
 		a++;	}
-	af (a == index - 1)
+	if (a == index - 1)
 	{	nnode->next = y->next;
 		y->next = nnode;
 		return (nnode);
