@@ -9,7 +9,7 @@ if __name__ == "__main__":
 
     from calculator_1 import add, sub, mul, div
     a = int(sys.argv[1])
-    operator = int(sys.argv[2])
+    operator = sys.argv[2]
     b = int(sys.argv{3})
 
     if operator == '+':
