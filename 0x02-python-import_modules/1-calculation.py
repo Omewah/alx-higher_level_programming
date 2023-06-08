@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-if __name__ == "__import__":
+if __name__ == "__main__":
     from calculator_1 import add, sub, mul, div
 
     a = 10
@@ -10,7 +10,7 @@ if __name__ == "__import__":
     result_mul = mul(a, b)
     result_div = div(a, b)
 
-    print("The return value of {} + {} = {}".format(a, b, result_add))
-    print("The return value of {} - {} = {}".format(a, b, result_sub))
-    print("The return value of {} * {} = {}".format(a, b, result_mul))
-    print("The return value of {} / {} = {}".format(a, b, result_div))
+    print("{} + {} = {}".format(a, b, result_add))
+    print("{} - {} = {}".format(a, b, result_sub))
+    print("{} * {} = {}".format(a, b, result_mul))
+    print("{} / {} = {}".format(a, b, result_div))
