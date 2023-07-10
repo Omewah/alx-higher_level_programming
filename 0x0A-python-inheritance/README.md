@@ -1,6 +1,6 @@
 # 0x0A. Python - Inheritance
 
-## Omewah Joel
+# Omewah Joel
 
 ## Description
 This directory  is an introduction to the concept of ``` inheritance ``` .
@@ -26,10 +26,4 @@ Files | Description
 [10-square.py](./10-square.py) | A class Square that inherits from Rectangle (9-rectangle.py). Instantiation with size: def __init__(self, size):
 [11-square.py](./11-square.py) | A class Square that inherits from Rectangle (9-rectangle.py). (task based on 10-square.py). Instantiation with size: def __init__(self, size):
 [100-my_int.py](./100-my_int.py) | A class MyInt that inherits from int:
-[101-add_attribute.py](./101-add_attribute.py) | A function that adds a new attribute to an object if it’s possible: 
-
-
-## Resources
-- [Inheritance](https://docs.python.org/3/tutorial/classes.html#inheritance)
-- [Inheritance in Python](https://www.packt.com/inheritance-python/)
-- [Learn to Program 10 : Inheritance Magic Methods](https://www.youtube.com/watch?v=d8kCdLCi6Lk)
+[101-add_attribute.py](./101-add_attribute.py) | A function that adds a new attribute to an object if it’s possible:
