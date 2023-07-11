@@ -11,7 +11,7 @@ item = []
 if path('add_item.json').exists():
     items = load_from_json_file('add_item.json')
 
-for i in range (1, len(sys.argv)):
+for i in range(1, len(sys.argv)):
     item.append(str(sys.argv[i]))
 
 save_to_json_file(items, 'add_item.json')
