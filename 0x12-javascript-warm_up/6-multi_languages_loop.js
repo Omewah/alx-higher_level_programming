@@ -8,5 +8,5 @@ let a;
 const myStringArray = ['C is fun', 'Python is cool', 'JavaScript is amazing'];
 
 for (a = 0; a < 3; a++) {
-    console.log(myStringArray[a]);
+  console.log(myStringArray[a]);
 }
