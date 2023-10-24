@@ -1,8 +1,8 @@
 #!/usr/bin/node
 
-const fcont = require('fcont');
+const fs = require('fs');
 
-fcont.writeFile(process.argv[2], process.argv[3], 'utf8', function (err) {
+fs.writeFile(process.argv[2], process.argv[3], 'utf8', function (err) {
   if (err) {
     console.log(err);
   }
