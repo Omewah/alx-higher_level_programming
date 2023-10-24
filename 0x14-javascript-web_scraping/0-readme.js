@@ -1,8 +1,8 @@
 #!/usr/bin/node
 
-const fcont = require('fcont');
+const fs = require('fs');
 
-fcont.readFile(process.argv[2], 'utf8', function (err, data) {
+fs.readFile(process.argv[2], 'utf8', function (err, data) {
   if (err) {
     console.log(err);
   } else {
